@@ -1298,3 +1298,117 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
  2016-10-12 20:35:24,785 [P6272/D4/T38] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
  2016-10-12 20:35:32,004 [P6272/D4/T38] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
  2016-10-12 20:35:38,745 [P6272/D4/T48] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-10-12 20:43:40,609 [P6128/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.2 application starting on DESKTOP-A4DKM7S
+ 2016-10-12 20:43:40,641 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-10-12 20:43:40,662 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 20ms)
+ 2016-10-12 20:43:40,759 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-10-12 20:43:40,780 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 19ms)
+ 2016-10-12 20:43:40,815 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-10-12 20:43:40,817 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1ms)
+ 2016-10-12 20:43:40,817 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-10-12 20:43:40,820 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 2ms)
+ 2016-10-12 20:43:40,847 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-10-12 20:43:40,849 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 2ms)
+ 2016-10-12 20:43:40,850 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-10-12 20:43:40,861 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 11ms)
+ 2016-10-12 20:43:40,922 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-10-12 20:43:40,924 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 1ms)
+ 2016-10-12 20:43:40,925 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-10-12 20:43:40,926 [P6128/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 1ms)
+ 2016-10-12 20:43:42,142 [P6128/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-10-12 20:43:42,439 [P6128/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-10-12 20:43:42,455 [P6128/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-10-12 20:43:42,483 [P6128/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-10-12 20:43:42,572 [P6128/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-10-12 20:43:42,573 [P6128/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-10-12 20:43:42,593 [P6128/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2108ms)
+ 2016-10-12 20:43:42,782 [P6128/D2/T6] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:51196/umbraco (UmbracoModule request)
+ 2016-10-12 20:43:43,443 [P6128/D2/T6] INFO  umbraco.content - Load Xml from file...
+ 2016-10-12 20:43:43,447 [P6128/D2/T6] INFO  umbraco.content - Loaded Xml from file.
+ 2016-10-12 20:43:44,130 [P6128/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-10-12 20:43:44,132 [P6128/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 1ms)
+ 2016-10-12 20:43:47,307 [P6128/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-10-12 20:43:47,308 [P6128/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)
+ 2016-10-12 20:43:47,586 [P6128/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.cms.businesslogic.macro.IMacroEngine
+ 2016-10-12 20:43:47,588 [P6128/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 0 (took 1ms)
+ 2016-10-12 20:43:52,493 [P6128/D2/T6] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-10-12 20:43:52,658 [P6128/D2/T6] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-10-12 20:44:43,508 [P6128/D2/T15] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-10-11 20:44:43
+ 2016-10-12 20:46:18,712 [P6128/D2/T20] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username eaanaval@students.eaaa.dk from IP address ::1
+ 2016-10-12 20:46:18,714 [P6128/D2/T20] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: eaanaval@students.eaaa.dk logged in from IP address ::1
+ 2016-10-12 20:46:18,910 [P6128/D2/T20] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-10-12 20:46:18,912 [P6128/D2/T20] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 1ms)
+ 2016-10-12 20:46:19,057 [P6128/D2/T20] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-10-12 20:46:19,059 [P6128/D2/T20] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 1ms)
+ 2016-10-12 20:46:19,168 [P6128/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-10-12 20:46:19,173 [P6128/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 5ms)
+ 2016-10-12 20:46:19,202 [P6128/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-10-12 20:46:19,202 [P6128/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-10-12 20:46:19,207 [P6128/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-10-12 20:46:19,208 [P6128/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 0ms)
+ 2016-10-12 20:47:21,558 [P6128/D2/T14] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2016-10-12 20:47:21,559 [P6128/D2/T14] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 1ms)
+ 2016-10-12 20:48:02,107 [P6128/D2/T23] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Guidelines For Better Client Feedback on Web Design' with Id '1081' has been published.
+ 2016-10-12 20:48:06,382 [P6128/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 20:48:06,398 [P6128/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 20:49:08,321 [P6128/D2/T8] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Guidelines For Better Client Feedback on Web Design' with Id '1081' has been published.
+ 2016-10-12 20:49:12,411 [P6128/D2/T16] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 20:49:12,421 [P6128/D2/T16] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 20:49:39,338 [P6128/D2/T6] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Guidelines For Better Client Feedback on Web Design' with Id '1081' has been published.
+ 2016-10-12 20:49:43,422 [P6128/D2/T37] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 20:49:43,435 [P6128/D2/T37] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 20:51:24,094 [P6128/D2/T47] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Common Mistakes When Presenting Design Ideas to Clients, and How to Avoid Them' with Id '1082' has been published.
+ 2016-10-12 20:51:28,206 [P6128/D2/T16] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 20:51:28,223 [P6128/D2/T16] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 20:51:53,368 [P6128/D2/T47] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Common Mistakes When Presenting Design Ideas to Clients, and How to Avoid Them' with Id '1082' has been published.
+ 2016-10-12 20:51:57,449 [P6128/D2/T42] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 20:51:57,490 [P6128/D2/T42] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 20:52:53,729 [P6128/D2/T16] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Common Mistakes When Presenting Design Ideas to Clients, and How to Avoid Them' with Id '1082' has been published.
+ 2016-10-12 20:52:57,925 [P6128/D2/T57] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 20:52:57,960 [P6128/D2/T57] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 21:04:33,864 [P6128/D2/T81] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'About' with Id '1092' has been published.
+ 2016-10-12 21:04:38,004 [P6128/D2/T67] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 21:04:38,062 [P6128/D2/T67] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 21:07:12,221 [P6128/D2/T77] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'About' with Id '1092' has been published.
+ 2016-10-12 21:07:16,412 [P6128/D2/T97] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 21:07:16,419 [P6128/D2/T97] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 21:07:27,805 [P6128/D2/T77] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'About' with Id '1092' has been published.
+ 2016-10-12 21:07:31,877 [P6128/D2/T57] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 21:07:31,892 [P6128/D2/T57] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 21:12:58,741 [P6128/D2/T98] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home page' with Id '1060' has been published.
+ 2016-10-12 21:13:02,847 [P6128/D2/T77] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 21:13:02,881 [P6128/D2/T77] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 21:13:56,071 [P6128/D2/T67] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'About' with Id '1092' has been published.
+ 2016-10-12 21:14:00,173 [P6128/D2/T98] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 21:14:00,199 [P6128/D2/T98] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 21:18:48,696 [P6128/D2/T99] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Articles' with Id '1080' has been published.
+ 2016-10-12 21:18:52,789 [P6128/D2/T99] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 21:18:52,808 [P6128/D2/T99] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 21:19:52,573 [P6128/D2/T75] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Articles' with Id '1080' has been published.
+ 2016-10-12 21:19:56,675 [P6128/D2/T110] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 21:19:56,689 [P6128/D2/T110] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 21:26:01,828 [P6128/D2/T67] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Manageable Web Project Cost Estimates' with Id '1093' has been published.
+ 2016-10-12 21:26:05,939 [P6128/D2/T110] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 21:26:05,979 [P6128/D2/T110] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 21:28:29,564 [P6128/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Perfect Project Pitch' with Id '1084' has been published.
+ 2016-10-12 21:28:33,662 [P6128/D2/T17] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 21:28:33,712 [P6128/D2/T17] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 21:31:32,790 [P6128/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Both Worlds &Material Design' with Id '1094' has been published.
+ 2016-10-12 21:31:36,989 [P6128/D2/T22] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 21:31:37,032 [P6128/D2/T22] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 21:31:51,328 [P6128/D2/T33] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Both Worlds &Material Design' with Id '1094' has been published.
+ 2016-10-12 21:31:55,557 [P6128/D2/T22] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 21:31:55,585 [P6128/D2/T22] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 21:32:16,360 [P6128/D2/T38] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt failed for username eaanaval@students.eaaa.dk from IP address ::1, the user does not exist
+ 2016-10-12 21:32:16,364 [P6128/D2/T38] INFO  Umbraco.Web.Mvc.UmbracoPageResult - Executing Umbraco RouteDefinition controller
+ 2016-10-12 21:32:16,393 [P6128/D2/T38] INFO  Umbraco.Web.Mvc.UmbracoPageResult - Finished (took 29ms)
+ 2016-10-12 21:32:22,892 [P6128/D2/T59] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username darthvader from IP address ::1
+ 2016-10-12 21:35:54,576 [P6128/D2/T33] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Modular JavaScript Projects with RequireJS' with Id '1095' has been published.
+ 2016-10-12 21:35:58,681 [P6128/D2/T33] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 21:35:58,698 [P6128/D2/T33] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 21:36:23,658 [P6128/D2/T22] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Modular JavaScript Projects with RequireJS' with Id '1095' has been published.
+ 2016-10-12 21:36:27,783 [P6128/D2/T21] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 21:36:27,791 [P6128/D2/T21] INFO  umbraco.content - Saved Xml to file.
+ 2016-10-12 21:37:07,955 [P6128/D2/T33] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home page' with Id '1060' has been published.
+ 2016-10-12 21:37:12,052 [P6128/D2/T33] INFO  umbraco.content - Save Xml to file...
+ 2016-10-12 21:37:12,108 [P6128/D2/T33] INFO  umbraco.content - Saved Xml to file.
