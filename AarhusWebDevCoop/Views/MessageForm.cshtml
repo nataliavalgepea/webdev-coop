@@ -1,0 +1,74 @@
+﻿@model AarhusWebDevCoop.ViewModels.MessageForm
+@{
+    Layout = null;
+}
+
+@if (TempData["success"] == null)
+{
+
+    using (Html.BeginUmbracoForm("HandleFormSubmit", "MessageBoardSurface", new object { }, new { @class = "form-horizontal" }))
+    {
+        <div class="form-group">
+            @Html.LabelFor(m => m.Name, new { @class = "col-sm-2 control-label" })
+            @* <label class="col-sm-2 control-label">Name</label>*@
+            <div class="col-sm-6">
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Name" })
+                @* <input name="name" id="name" type="text" class="form-control" placeholder="Name"/> *@
+                @Html.ValidationMessageFor(m => m.Name)
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Message, new { @class = "col-sm-2 control-label" })
+            @*<label class="col-sm-2 control-label">Message</label*@
+            <div class="col-sm-6">
+                @Html.TextBoxFor(m => m.Message, new { @class = "form-control", placeholder = "Your message" })
+                @*<textarea name="message" id="message" type="text" class="form-control" placeholder="Your message" row="5"></textarea>*@
+                @Html.ValidationMessageFor(m => m.Message)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-6">
+                <button id="contact-submit" type="submit" class="btn btn-primary input-medium pull-left">Sent</button>
+            </div>
+        </div>
+
+        // @Model.Name
+        // @Model.Message
+    }
+}
+else
+{
+    using (Html.BeginUmbracoForm("HandleFormSubmit", "MessageSurface", new Object { }, new { @class = "form-horizontal" }))
+    {
+        <div class="form-group">
+            @Html.LabelFor(m => m.Name, new { @class = "col-sm-2 control-label" })
+            @* <label class="col-sm-2 control-label">Name</label>*@
+            <div class="col-sm-6">
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Name" })
+                @* <input name="name" id="name" type="text" class="form-control" placeholder="Name"/> *@
+                @Html.ValidationMessageFor(m => m.Name)
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Message, new { @class = "col-sm-2 control-label" })
+            @*<label class="col-sm-2 control-label">Message</label*@
+            <div class="col-sm-6">
+                @Html.TextBoxFor(m => m.Message, new { @class = "form-control", placeholder = "Your message" })
+                @*<textarea name="message" id="message" type="text" class="form-control" placeholder="Your message" row="5"></textarea>*@
+                @Html.ValidationMessageFor(m => m.Message)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-6">
+                <button id="contact-submit" type="submit" class="btn btn-primary input-medium pull-left">Sent</button>
+            </div>
+        </div>
+
+    }
+}

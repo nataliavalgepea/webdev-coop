@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+<div class="messages">
+    @{var messages = Umbraco.Content(1234);
+    if(messages.Children()!=null){}{
+    <ul id="messages">
+        @foreach(var message in messages.Children())
+        {
+        <li>
+            <h3>@message.Name</h3>
+            <p>@message.Text</p>
+        </li>
+        }
+    </ul>
+    }
+    }
+</div>

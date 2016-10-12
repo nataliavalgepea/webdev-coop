@@ -1,0 +1,66 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+
+@*
+    This snippet displays a list of links of the pages immediately under the top-most page in the content tree.
+    This is the home page for a standard website.
+    It also highlights the current active page/section in the navigation with the css class "current".
+*@
+
+@{ var selection = CurrentPage.Site().Children.Where("Visible"); }
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">AarhusWebDev</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                @foreach (var item in selection)
+                {
+                    string className = item.IsAncestorOrSelf(CurrentPage) ? "active" : null;
+                    if (item.Children.Any())
+                    {
+                        // add space after the class name if class="active" a.k.a != null
+                        if (className != null)
+                        {
+                            className += " ";
+                        }
+
+                        // add dropdown class because item has children
+                        className += "dropdown";
+                    }
+                    <li class="@className">
+                        @{
+                            if (item.DocumentTypeAlias == "projectsMain")
+                            {
+                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="@item.Url">@item.Name <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    @foreach (var child in item.Children)
+                                    {
+                                        if (child.projectStatus == "Completed")
+                                        {
+                                            <li><a href="@child.Url">@child.Name</a></li>
+                                        }
+                                    }
+                                </ul>
+                            }
+                            else
+                            {
+                                <a href="@item.Url">@item.Name</a>
+                            }
+                        }
+                    </li>
+                }
+            </ul>
+
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
