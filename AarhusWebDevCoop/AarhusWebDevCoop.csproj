@@ -295,6 +295,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\AarhusWebDevCoop.mdf" />
+    <Content Include="App_Data\AarhusWebDevCoop_log.ldf">
+      <DependentUpon>AarhusWebDevCoop.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
@@ -413,7 +417,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\" />
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\ContactFormSurface\" />
     <Folder Include="Views\HandleFormSubmit\" />
