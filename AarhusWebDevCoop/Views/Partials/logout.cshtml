@@ -27,11 +27,7 @@
 		<p> You are currently logged in as @loginModel.Name</p>
 		
 			using (Html.BeginUmbracoForm<UmbLoginStatusController>("HandleLogout")){
-				<fieldset>
-					<legend>Logout</legend>
-					<button type="submit">Logout</button>
-				</fieldset>
-					
+					<button type="submit" class="btn btn-primary">Logout</button>
 				@Html.HiddenFor(m => logoutModel.RedirectUrl)
 
         }

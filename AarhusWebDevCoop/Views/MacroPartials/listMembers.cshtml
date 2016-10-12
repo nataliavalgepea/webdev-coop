@@ -7,32 +7,43 @@
     var prospectMembers = memberService.GetMembersByGroup("Prospect");
 }
 
-<p>Active members</p>
-@foreach (var member in activeMembers)
-{
-    <p>
-        @(member.GetValue("firstname") + " "
-+ member.GetValue("lastname")) <br />
-        @member.GetValue("address")<br />
-        @(member.GetValue("zip") + " "
-+ member.GetValue("city"))
-        Mobile: @member.GetValue("mobile")<br />
-    </p>
-        string fullPath = member.GetValue("photo").ToString();
-        string[] substrings = fullPath.Split(',');
-        string srcString = substrings[2];
-        string[] srcSubStrings = srcString.Split(':');
-        string srcPath = srcSubStrings[1].Replace("\"", "");
-        srcPath = srcPath.Replace("}", "");
-        <img class="img-responsive" src="@srcPath" />
-}
+<div class="panel">
+    <h2 class="panel-title">Active members</h2>
+    <div class="panel-body">
+        <div class="row">
+            @foreach (var member in activeMembers)
+            {
+                string fullPath = member.GetValue("photo").ToString();
+                string[] substrings = fullPath.Split(',');
+                string srcString = substrings[2];
+                string[] srcSubStrings = srcString.Split(':');
+                string srcPath = srcSubStrings[1].Replace("\"", "");
+                srcPath = srcPath.Replace("}", "");
 
-<p>Prospect members</p>
-@foreach (var member in prospectMembers)
-{
-    <p>
-        @(member.GetValue("firstname") + " "
-+ member.GetValue("lastname")) <br />
-        Mobile: @member.GetValue("mobile")<br />
-    </p>
-}
+                <div class="col-md-6">
+                    <img class="img-responsive" src="@srcPath" style="max-height: 300px; float: left;" />
+                    <h4>@(member.GetValue("firstname") + " " + member.GetValue("lastname"))</h4>
+                    <div>@member.GetValue("address")</div>
+                    <div>@(member.GetValue("zip") + " " + member.GetValue("city"))</div>
+                    <br />
+                    <div>Mobile: @member.GetValue("mobile")</div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+    <h2 class="panel-title">Prospect members</h2>
+    <div class="panel-body">
+        <div class="row">
+            @foreach (var member in prospectMembers)
+            {
+                <div class="col-md-3">
+                    <h4>@(member.GetValue("firstname") + " " + member.GetValue("lastname"))</h4>
+                    <div>Mobile: @member.GetValue("mobile")</div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
